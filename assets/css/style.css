@@ -45,3 +45,21 @@ ul {
 .logo span {
     color: var(--primary);
 }
+/* ==========================
+   NAVIGATION LINKS
+========================== */
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--text);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
