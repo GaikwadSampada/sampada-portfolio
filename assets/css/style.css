@@ -43,10 +43,22 @@ ul {
    LOGO
 ========================== */
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--secondary);
+.logo{
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    color:var(--secondary);
+
+    transition:.3s;
+
+}
+
+.logo:hover{
+
+    color:var(--primary);
+
 }
 
 .logo span {
@@ -88,21 +100,36 @@ ul {
 ========================== */
 
 header {
+
     position: sticky;
+
     top: 0;
+
     z-index: 1000;
 
-    background-color: var(--white);
+    background: rgba(255,255,255,0.75);
 
-    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255,255,255,.3);
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.05);
+
 }
-
 /* ==========================
    NAVBAR
 ========================== */
 
-.navbar {
-    padding: 20px 0;
+.navbar{
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
 }
 section{
     min-height:100vh;
@@ -183,36 +210,70 @@ section{
     gap:20px;
 
 }
+
+/* ==========================
+   BUTTONS
+========================== */
+
 .btn{
 
-    padding:14px 28px;
+    display:inline-flex;
 
-    border-radius:8px;
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 30px;
+
+    border-radius:10px;
 
     font-weight:600;
 
-    transition:.3s;
+    transition:all .3s ease;
+
+    cursor:pointer;
 
 }
+
 .btn-primary{
 
-    background:#2563eb;
+    background:var(--primary);
 
-    color:white;
+    color:var(--white);
+
+    box-shadow:0 10px 20px rgba(37,99,235,.25);
 
 }
+
 .btn-primary:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 35px rgba(37,99,235,.35);
 
 }
+
 .btn-secondary{
 
-    border:2px solid #2563eb;
+    border:2px solid var(--primary);
 
-    color:#2563eb;
+    color:var(--primary);
+
+    background:transparent;
 
 }
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    transform:translateY(-5px);
+
+}
+
+
 /* ==========================
    HERO ANIMATIONS
 ========================== */
@@ -321,17 +382,7 @@ section{
     margin-bottom:25px;
 
 }
-.status-dot{
 
-    width:10px;
-
-    height:10px;
-
-    background:#22c55e;
-
-    border-radius:50%;
-
-}
 @keyframes pulse{
 
     0%{
