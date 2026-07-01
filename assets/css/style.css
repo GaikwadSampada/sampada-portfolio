@@ -794,3 +794,113 @@ section{
     color:white;
 
 }
+
+/* ==========================
+   EXPERIENCE
+========================== */
+
+.experience{
+
+    padding:100px 8%;
+
+    background:#ffffff;
+
+}
+
+.experience-container{
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+.experience-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.timeline{
+
+    position:relative;
+
+    padding-left:40px;
+
+    border-left:3px solid var(--primary);
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:50px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-52px;
+
+    top:8px;
+
+    width:20px;
+
+    height:20px;
+
+    background:var(--primary);
+
+    border-radius:50%;
+
+    border:5px solid white;
+
+    box-shadow:0 0 15px rgba(37,99,235,.3);
+
+}
+
+.timeline-content{
+
+    background:#f8fafc;
+
+    padding:30px;
+
+    border-radius:16px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.timeline-date{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.timeline-content h3{
+
+    margin:15px 0 5px;
+
+}
+
+.timeline-content h4{
+
+    color:#666;
+
+    margin-bottom:15px;
+
+}
+
+.timeline-content p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}

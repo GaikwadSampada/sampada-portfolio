@@ -123,3 +123,24 @@
     }
 
 }
+@media(max-width:768px){
+
+.timeline{
+
+    padding-left:25px;
+
+}
+
+.timeline-dot{
+
+    left:-37px;
+
+}
+
+.timeline-content{
+
+    padding:20px;
+
+}
+
+}
