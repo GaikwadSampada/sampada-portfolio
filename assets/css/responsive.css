@@ -286,3 +286,54 @@
     }
 
 }
+/* ==========================
+   FOOTER RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .footer{
+
+        padding:50px 20px 20px;
+
+    }
+
+    .footer-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .footer-logo p{
+
+        margin:auto;
+
+    }
+
+    .footer-links ul{
+
+        align-items:center;
+
+    }
+
+    .footer-icons{
+
+        justify-content:center;
+
+    }
+
+    .back-to-top{
+
+        right:20px;
+
+        bottom:20px;
+
+        width:45px;
+
+        height:45px;
+
+    }
+
+}

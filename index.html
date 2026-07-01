@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <link rel="stylesheet" href="./assets/css/responsive.css">
-
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -843,103 +843,203 @@
 
             <div class="contact-info">
 
-                <div class="contact-card">
+      <div class="contact-card">
 
-                    <i class="fa-solid fa-envelope"></i>
+    <i class="fa-solid fa-envelope"></i>
 
-                    <div>
+    <div>
 
-                        <h3>Email</h3>
+        <h3>Email</h3>
 
-                        <p>your@email.com</p>
+        <p>sampada.gaikwad.3011@gmail.com</p>
 
-                    </div>
+    </div>
 
-                </div>
+</div>
 
-                <div class="contact-card">
+<div class="contact-card">
 
-                    <i class="fa-solid fa-phone"></i>
+    <i class="fa-solid fa-phone"></i>
 
-                    <div>
+    <div>
 
-                        <h3>Phone</h3>
+        <h3>Phone</h3>
 
-                        <p>+91 XXXXX XXXXX</p>
+        <p>+91 8308304188</p>
 
-                    </div>
+    </div>
 
-                </div>
+</div>
 
-                <div class="contact-card">
+<div class="contact-card">
 
-                    <i class="fa-solid fa-location-dot"></i>
+    <i class="fa-solid fa-location-dot"></i>
 
-                    <div>
+    <div>
 
-                        <h3>Location</h3>
+        <h3>Location</h3>
 
-                        <p>Pune, Maharashtra</p>
+        <p>Pune, Maharashtra</p>
 
-                    </div>
+    </div>
 
-                </div>
+</div>
 
-                <div class="social-icons">
+<div class="social-icons">
 
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.linkedin.com/in/sampada-gaikwad-847143220/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+    </a>
 
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.hackerrank.com/profile/sampasagaikwad11" target="_blank">
+        <i class="fa-brands fa-hackerrank"></i>
+    </a>
 
-                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    <a href="mailto:sampada.gaikwad.3011@gmail.com">
+        <i class="fas fa-envelope"></i>
+    </a>
 
-                </div>
+</div>
 
+  
             </div>
 
             <!-- Right Side -->
+<div id="successMessage" class="success-message"></div>
+          <form class="contact-form" id="contactForm">
 
-            <form class="contact-form">
+    <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+    >
 
-                <input
-                    type="text"
-                    placeholder="Your Name"
-                    required
-                >
+    <input
+        type="email"
+        name="email"
+        placeholder="Your Email"
+        required
+    >
 
-                <input
-                    type="email"
-                    placeholder="Your Email"
-                    required
-                >
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject"
+        required
+    >
 
-                <input
-                    type="text"
-                    placeholder="Subject"
-                >
+    <textarea
+        name="message"
+        rows="6"
+        placeholder="Your Message"
+        required
+    ></textarea>
 
-                <textarea
-                    rows="6"
-                    placeholder="Your Message"
-                    required
-                ></textarea>
+    <button
+        type="submit"
+        class="btn btn-primary"
+    >
+        Send Message
+    </button>
 
-                <button
-                    type="submit"
-                    class="btn btn-primary"
-                >
-                    Send Message
-                </button>
-
-            </form>
-
+</form>
         </div>
 
     </div>
 
 </section>
-</main>
 
+</main>
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+
+            <h2>
+                Sampada<span>.</span>
+            </h2>
+
+            <p>
+                Java Full Stack Developer passionate about building modern
+                web applications.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#experience">Experience</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h3>Connect</h3>
+
+          <div class="footer-icons">
+
+    <a href="https://www.linkedin.com/in/sampada-gaikwad-847143220/"
+       target="_blank">
+
+        <i class="fab fa-linkedin"></i>
+
+    </a>
+
+    <a href="https://www.hackerrank.com/profile/sampasagaikwad11"
+       target="_blank">
+
+        <i class="fa-brands fa-hackerrank"></i>
+
+    </a>
+
+    <a href="mailto:sampada.gaikwad.3011@gmail.com">
+
+        <i class="fas fa-envelope"></i>
+
+    </a>
+
+</div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Sampada Gaikwad. All Rights Reserved.
+        </p>
+
+    </div>
+
+    <!-- Back To Top -->
+
+    <a href="#home" class="back-to-top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </a>
+
+</footer>
     <!-- JavaScript -->
     <script src="./assets/js/script.js"></script>
 
