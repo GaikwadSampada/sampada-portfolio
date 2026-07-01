@@ -123,24 +123,101 @@
     }
 
 }
+/* ==========================
+   EXPERIENCE RESPONSIVE
+========================== */
+
 @media(max-width:768px){
 
-.timeline{
+    .experience{
 
-    padding-left:25px;
+        padding:70px 20px;
+
+    }
+
+    .experience-header{
+
+        margin-bottom:40px;
+
+    }
+
+    .experience-top{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+
+    }
+
+    .company-logo{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:1.4rem;
+
+    }
+
+    .experience-info h3{
+
+        font-size:1.4rem;
+
+    }
+
+    .experience-status{
+
+        margin-top:5px;
+
+    }
+
+    .timeline-card{
+
+        padding:25px;
+
+    }
+
+    .experience-list{
+
+        padding-left:18px;
+
+    }
+
+    .experience-tech{
+
+        gap:10px;
+
+    }
+
+    .experience-tech span{
+
+        font-size:.85rem;
+
+        padding:8px 14px;
+
+    }
 
 }
+@media(max-width:768px){
 
-.timeline-dot{
+    .projects{
 
-    left:-37px;
+        padding:70px 20px;
 
-}
+    }
 
-.timeline-content{
+    .projects-grid{
 
-    padding:20px;
+        grid-template-columns:1fr;
 
-}
+    }
+
+    .project-card{
+
+        padding:22px;
+
+    }
 
 }
