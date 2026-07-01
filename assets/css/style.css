@@ -31,6 +31,13 @@ ul {
     --secondary: #0f172a;
     --background: #f8fafc;
     --text: #334155;
+    --white: #ffffff;
+
+    --transition: 0.3s ease;
+
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    --container-width: 1200px;
 }
 /* ==========================
    LOGO
@@ -62,4 +69,25 @@ ul {
 
 .nav-links a:hover {
     color: var(--primary);
+}
+/* ==========================
+   CONTAINER
+========================== */
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+    padding: 20px 0;
+    background-color: var(--white);
 }
