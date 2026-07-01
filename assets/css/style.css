@@ -84,14 +84,32 @@ ul {
     align-items: center;
 }
 /* ==========================
+   HEADER
+========================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: var(--white);
+
+    box-shadow: var(--shadow);
+}
+
+/* ==========================
    NAVBAR
 ========================== */
 
 .navbar {
     padding: 20px 0;
-    background-color: var(--white);
 }
 section{
     min-height:100vh;
     padding:80px 0;
+}
+.header{
+    position:fixed;
+    top:0;
+    width:100%;
 }
