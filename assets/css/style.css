@@ -1228,3 +1228,90 @@ section{
     line-height:1.7;
 
 }
+/* ==========================
+   CERTIFICATES
+========================== */
+
+.certificates{
+
+    padding:90px 8%;
+
+    background:#ffffff;
+
+}
+
+.certificates-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.certificates-header{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.certificates-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.certificate-card{
+
+    background:#f8fafc;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.15);
+
+}
+
+.certificate-card i{
+
+    font-size:2rem;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.certificate-card h3{
+
+    font-size:1.2rem;
+
+    margin-bottom:10px;
+
+    color:var(--secondary);
+
+}
+
+.certificate-card p{
+
+    color:#64748b;
+
+}

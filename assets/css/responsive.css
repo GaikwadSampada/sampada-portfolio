@@ -246,3 +246,22 @@
     }
 
 }
+/* ==========================
+   CERTIFICATES RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .certificates{
+
+        padding:70px 20px;
+
+    }
+
+    .certificates-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
