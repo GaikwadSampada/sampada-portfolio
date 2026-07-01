@@ -120,3 +120,199 @@ section{
     cursor: pointer;
     color: var(--secondary);
 }
+/* ==========================
+   HERO SECTION
+========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #f8fafc,
+        #eef6ff
+    );
+
+}
+.hero-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:4rem;
+
+}
+.hero-content{
+
+    flex:1;
+
+}
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+.hero-image img{
+
+    width:350px;
+
+    border-radius:20px;
+
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+.hero-title{
+
+    font-size:3.5rem;
+
+    margin:10px 0;
+
+}
+.hero-role{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+.hero-description{
+
+    max-width:550px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+.hero-buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    gap:20px;
+
+}
+.btn{
+
+    padding:14px 28px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+.btn-primary{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+.btn-secondary{
+
+    border:2px solid #2563eb;
+
+    color:#2563eb;
+
+}
+/* ==========================
+   HERO ANIMATIONS
+========================== */
+
+@keyframes fadeInLeft {
+
+    from{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes fadeInRight {
+
+    from{
+        opacity:0;
+        transform:translateX(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+.hero-content{
+
+    flex:1;
+
+    animation:fadeInLeft 1s ease;
+
+}
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    animation:fadeInRight 1s ease;
+
+}
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+.hero-image img{
+
+    width:350px;
+
+    border-radius:20px;
+
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+    animation:floating 4s ease-in-out infinite;
+
+}
