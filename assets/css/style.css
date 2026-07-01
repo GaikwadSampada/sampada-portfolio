@@ -108,8 +108,15 @@ section{
     min-height:100vh;
     padding:80px 0;
 }
-.header{
-    position:fixed;
-    top:0;
-    width:100%;
+/* ==========================
+   MENU BUTTON
+========================== */
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--secondary);
 }
