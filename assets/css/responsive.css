@@ -221,3 +221,28 @@
     }
 
 }
+/* ==========================
+   ACHIEVEMENTS RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .achievements{
+
+        padding:70px 20px;
+
+    }
+
+    .achievements-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .achievement-card{
+
+        padding:25px;
+
+    }
+
+}
