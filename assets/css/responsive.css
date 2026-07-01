@@ -32,3 +32,98 @@
     }
 
 }
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        padding: 2rem 0;
+        transition: .3s;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    /* HERO */
+
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 260px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-role {
+        font-size: 1.5rem;
+    }
+}
+
+.about-container{
+    flex-direction:column;
+    text-align:center;
+}
+
+.about-highlights{
+    grid-template-columns:1fr;
+}
+
+/* ==========================
+   SKILLS RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .skills-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .skills-heading .section-title{
+
+        font-size:2.2rem;
+
+    }
+
+    .skill-box{
+
+        padding:25px;
+
+    }
+
+}
