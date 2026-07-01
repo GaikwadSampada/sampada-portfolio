@@ -102,19 +102,15 @@
     grid-template-columns:1fr;
 }
 
-/* ==========================
-   SKILLS RESPONSIVE
-========================== */
-
 @media(max-width:768px){
 
-    .skills-wrapper{
+    .skills-grid{
 
         grid-template-columns:1fr;
 
     }
 
-    .skills-heading .section-title{
+    .skills-header .section-title{
 
         font-size:2.2rem;
 
