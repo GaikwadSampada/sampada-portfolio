@@ -1238,3 +1238,13 @@ header {
     text-align: center;
     backdrop-filter: blur(5px);
 }
+
+.logo img{
+
+    height:42px;
+
+    width:auto;
+
+    display:block;
+
+}
