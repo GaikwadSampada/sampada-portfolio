@@ -1,6 +1,29 @@
+const themeBtn = document.getElementById("themeBtn");
+const themeIcon = document.getElementById("themeIcon");
 const menuBtn = document.getElementById("menuBtn");
 const menuIcon = document.getElementById("menuIcon");
 const navLinks = document.querySelector(".nav-links");
+
+// Theme Toggle Logic
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme === "light") {
+    document.body.classList.add("light-mode");
+    themeIcon.classList.remove("fa-sun");
+    themeIcon.classList.add("fa-moon");
+}
+
+themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    if (document.body.classList.contains("light-mode")) {
+        themeIcon.classList.remove("fa-sun");
+        themeIcon.classList.add("fa-moon");
+        localStorage.setItem("theme", "light");
+    } else {
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+        localStorage.setItem("theme", "dark");
+    }
+});
 
 menuBtn.addEventListener("click", () => {
 

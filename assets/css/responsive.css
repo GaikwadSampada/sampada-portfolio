@@ -1,41 +1,12 @@
-@media (max-width:768px){
+/* ==========================
+   RESPONSIVE LAYOUTS
+========================== */
 
-    .menu-btn{
-        display:block;
-    }
-
-    .nav-links{
-
-        position:absolute;
-        top:80px;
-        left:-100%;
-
-        width:100%;
-
-        background:white;
-
-        flex-direction:column;
-
-        text-align:center;
-
-        gap:1.5rem;
-
-        padding:2rem 0;
-
-        transition:.3s;
-    }
-
-    .nav-links.active{
-
-        left:0;
-
-    }
-
-}
 @media (max-width: 768px) {
-
+    /* NAVBAR */
     .menu-btn {
         display: block;
+        color: var(--text-main);
     }
 
     .nav-links {
@@ -43,24 +14,31 @@
         top: 80px;
         left: -100%;
         width: 100%;
-        background: white;
+        background: rgba(9, 9, 11, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid var(--border-glass);
         flex-direction: column;
         text-align: center;
         gap: 1.5rem;
         padding: 2rem 0;
-        transition: .3s;
+        transition: 0.4s ease-in-out;
     }
 
     .nav-links.active {
         left: 0;
     }
+    
+    .nav-links a::after {
+        display: none;
+    }
 
     /* HERO */
-
     .hero-container {
         flex-direction: column-reverse;
         text-align: center;
         gap: 2rem;
+        padding-top: 40px;
     }
 
     .hero-content {
@@ -89,251 +67,190 @@
     }
 
     .hero-role {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .circle-1 {
+        width: 300px;
+        height: 300px;
+        top: 0;
+        left: -50px;
+    }
+
+    /* ABOUT */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-highlights, .about-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .highlight-card, .detail-item {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-header .section-title {
+        font-size: 2.2rem;
+    }
+
+    .skill-box {
+        padding: 25px;
+    }
+    
+    .skill-box h3 {
+        justify-content: center;
+    }
+    
+    .skill-tags {
+        justify-content: center;
+    }
+
+    /* EXPERIENCE */
+    .experience {
+        padding: 70px 20px;
+    }
+
+    .experience-header {
+        margin-bottom: 40px;
+    }
+
+    .experience-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .company-logo {
+        width: 60px;
+        height: 60px;
+        font-size: 1.4rem;
+    }
+
+    .experience-info h3 {
+        font-size: 1.4rem;
+    }
+
+    .experience-status {
+        margin-top: 5px;
+        display: inline-block;
+    }
+
+    .timeline-card {
+        padding: 25px;
+    }
+
+    .experience-list {
+        padding-left: 18px;
+    }
+
+    .experience-tech {
+        gap: 10px;
+    }
+
+    .experience-tech span {
+        font-size: 0.85rem;
+        padding: 8px 14px;
+    }
+
+    /* PROJECTS */
+    .projects {
+        padding: 70px 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    /* ACHIEVEMENTS */
+    .achievements {
+        padding: 70px 20px;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-card {
+        padding: 25px;
+    }
+
+    /* CERTIFICATES */
+    .certificates {
+        padding: 70px 20px;
+    }
+
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+    .contact {
+        padding: 70px 20px;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+    
+    .contact-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 60px 20px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-logo p {
+        margin: auto;
+    }
+
+    .footer-links ul {
+        align-items: center;
+    }
+
+    .footer-icons {
+        justify-content: center;
+    }
+
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+        width: 45px;
+        height: 45px;
     }
 }
 
-.about-container{
-    flex-direction:column;
-    text-align:center;
-}
-
-.about-highlights{
-    grid-template-columns:1fr;
-}
-
-@media(max-width:768px){
-
-    .skills-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .skills-header .section-title{
-
-        font-size:2.2rem;
-
-    }
-
-    .skill-box{
-
-        padding:25px;
-
-    }
-
-}
-/* ==========================
-   EXPERIENCE RESPONSIVE
-========================== */
-
-@media(max-width:768px){
-
-    .experience{
-
-        padding:70px 20px;
-
-    }
-
-    .experience-header{
-
-        margin-bottom:40px;
-
-    }
-
-    .experience-top{
-
-        flex-direction:column;
-
-        align-items:flex-start;
-
-        gap:18px;
-
-    }
-
-    .company-logo{
-
-        width:60px;
-
-        height:60px;
-
-        font-size:1.4rem;
-
-    }
-
-    .experience-info h3{
-
-        font-size:1.4rem;
-
-    }
-
-    .experience-status{
-
-        margin-top:5px;
-
-    }
-
-    .timeline-card{
-
-        padding:25px;
-
-    }
-
-    .experience-list{
-
-        padding-left:18px;
-
-    }
-
-    .experience-tech{
-
-        gap:10px;
-
-    }
-
-    .experience-tech span{
-
-        font-size:.85rem;
-
-        padding:8px 14px;
-
-    }
-
-}
-@media(max-width:768px){
-
-    .projects{
-
-        padding:70px 20px;
-
-    }
-
-    .projects-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .project-card{
-
-        padding:22px;
-
-    }
-
-}
-/* ==========================
-   ACHIEVEMENTS RESPONSIVE
-========================== */
-
-@media(max-width:768px){
-
-    .achievements{
-
-        padding:70px 20px;
-
-    }
-
-    .achievements-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .achievement-card{
-
-        padding:25px;
-
-    }
-
-}
-/* ==========================
-   CERTIFICATES RESPONSIVE
-========================== */
-
-@media(max-width:768px){
-
-    .certificates{
-
-        padding:70px 20px;
-
-    }
-
-    .certificates-grid{
-
-        grid-template-columns:1fr;
-
-    }
-
-}
-@media(max-width:768px){
-
-    .contact{
-
-        padding:70px 20px;
-
-    }
-
-    .contact-content{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .contact-form button{
-
-        width:100%;
-
-    }
-
-}
-/* ==========================
-   FOOTER RESPONSIVE
-========================== */
-
-@media(max-width:768px){
-
-    .footer{
-
-        padding:50px 20px 20px;
-
-    }
-
-    .footer-container{
-
-        grid-template-columns:1fr;
-
-        text-align:center;
-
-    }
-
-    .footer-logo p{
-
-        margin:auto;
-
-    }
-
-    .footer-links ul{
-
-        align-items:center;
-
-    }
-
-    .footer-icons{
-
-        justify-content:center;
-
-    }
-
-    .back-to-top{
-
-        right:20px;
-
-        bottom:20px;
-
-        width:45px;
-
-        height:45px;
-
-    }
-
+/* ANIMATIONS */
+.skill-box,
+.timeline-card,
+.project-card,
+.achievement-card,
+.certificate-card {
+    animation: fadeUp 0.8s ease backwards;
 }
